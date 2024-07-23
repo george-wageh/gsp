@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        td {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        th {
+            background-color: #292929;
+            color: rgb(223, 217, 217);
+        }
+        button{
+            background-color: rgb(5, 97, 173);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 6px 15px #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="float: right; ">
+        <label for="" style="display: block;">Examples</label>
+        <textarea name="" id="" cols="30" rows="10" disabled style="float: right;  resize: none; ">
+{A}{B}{FG}{C}{D}
+{B}{G}{D}
+{B}{F}{G}{AB}
+{F}{AB}{C}{D}
+{A}{BC}{G}{F}{DE}</textarea>
+                <textarea name="" id="" cols="30" rows="10" disabled style="float: right;  resize: none;">
+{bd}{c}{b}
+{bf}{ce}{b}
+{ag}{b}
+{be}{ce}
+{a}{bd}{b}{c}{b}</textarea>
+    </div>
+    <label for="support">min-support</label>
+    <input type="text" name="" id="support">
+    <br>
+    <label for="input">Input</label>
+    <br>
+    <div style="display: grid; justify-items: center; justify-content: start">
+        <textarea name="" id="input" cols="30" rows="10"></textarea>
+        <br>
+        <button type="button" id="solve" style="height: 30px;width: 70px; margin: auto;">Solve</button>
+        <br>
+    </div>
+    <br>
+    <div style="display: flex;">
+        <div id="output" style="display: flex;flex-direction: column;padding: 5px; "><label for="output">Steps</label>
+        </div>
+        <div id="frequent"
+            style="display: flex;flex-direction: column ; margin-left: 20px; padding: 5px; border-radius: 10px; box-shadow: -3px 0px 15px #888888; height: fit-content;">
+            <label for="frequent">Frequent items</label></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
